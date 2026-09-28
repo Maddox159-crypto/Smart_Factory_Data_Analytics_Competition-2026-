@@ -8,6 +8,8 @@ This project uses RTU power data from 13 equipment types to identify **which equ
 
 ![Smart factory power anomaly monitoring dashboard](https://appapppy-smartfactorydashboard.streamlit.app/)
 
+![Dashboard Github](https://github.com/smichelle0804/smart-factory-dashboard-github)
+
 ## At a glance
 
 | Item | Description |
