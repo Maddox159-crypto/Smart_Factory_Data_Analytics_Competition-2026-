@@ -8,6 +8,7 @@
 13종 설비의 RTU 전력 데이터에서 **어느 설비를, 언제 우선 점검할지** 찾는 프로젝트입니다. 전체 설비를 비지도 모델로 선별한 뒤, 집중 관리 대상의 5초 단위 이상을 IQR, EWMA, Isolation Forest로 교차 분석하고 관제 대시보드에 표시했습니다. 여기서 *이상*은 전기적 관측 패턴에서 벗어난 시점이며, 실제 고장이나 에너지 낭비가 확인됐다는 뜻은 아닙니다.
 
 ![스마트팩토리 전력 이상 탐지 대시보드](https://appapppy-smartfactorydashboard.streamlit.app/)
+![대시보드 깃허브 주소](https://github.com/smichelle0804/smart-factory-dashboard-github)
 
 ## 프로젝트 개요
 
