@@ -2,6 +2,8 @@
 
 **5th BDAI Data Analytics Competition · Team green그린그림**  
 
+**2nd place out of 10+ finalists**
+
 This project uses RTU power data from 13 equipment types to identify **which equipment and time periods deserve inspection first**. An unsupervised model screens all equipment; IQR, EWMA, and Isolation Forest then examine the selected equipment at five-second resolution. A monitoring dashboard presents the results. An *anomaly* means a departure from the observed electrical pattern, not a confirmed failure or measured energy loss.
 
 ![Smart factory power anomaly monitoring dashboard](https://appapppy-smartfactorydashboard.streamlit.app/)
