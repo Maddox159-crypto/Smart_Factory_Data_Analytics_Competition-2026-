@@ -43,7 +43,7 @@ We therefore found **no useful advance signal within the available variables and
   | EWMA vs. Isolation Forest | **16,179** shared; **4,557** IF-only; **10,065** EWMA-only | Complementary candidate periods |
   | High-frequency periods | **369 periods** above **10.93 events/hour** | An initial inspection priority rule |
   
-  *The units and denominators differ.* The Stage 1 rate uses **five-minute aggregates across equipment**; Stage 2 counts and rates use **five-second observations of the preliminary dryer**. The **25,991 EWMA events** group consecutive flagged observations, whereas **26,244** counts individual flagged observations. Stage 2 Isolation Forest used `contamination=0.008` to match IQR's approximate detection volume, so its **0.80% rate is not independent evidence of accuracy**. Overlap between methods is not a ground-truth performance measure either.
+The Stage 1 rate uses **five-minute aggregates across equipment**; Stage 2 counts and rates use **five-second observations of the preliminary dryer**. The **25,991 EWMA events** group consecutive flagged observations, whereas **26,244** counts individual flagged observations. Stage 2 Isolation Forest used `contamination=0.008` to match IQR's approximate detection volume, so its **0.80% rate is not independent evidence of accuracy**. Overlap between methods is not a ground-truth performance measure either.
 
 ## Operational use
 
@@ -55,8 +55,5 @@ The proposed flow is **rank equipment → compare method decisions at a timestam
 - Mean active power was unusually similar across functionally different equipment, at roughly 3,009 W. Metering and equipment labels need checking. A recorded `operation=1` throughout the dataset does not by itself prove that every machine physically ran around the clock.
 - **Energy savings, bill savings, and avoided emissions were not measured.** They require actual before-and-after consumption and billing data.
 - Applying the workflow elsewhere requires recalibrating equipment baselines, EWMA settings, Isolation Forest thresholds, and alert rules. Live data ingestion and model update criteria are future work.
-
-
-green그린그림
 
 *Prepared from the competition report, presentation, and monitoring prototype screenshot.*
